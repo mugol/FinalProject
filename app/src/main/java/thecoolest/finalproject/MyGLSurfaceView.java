@@ -20,6 +20,7 @@ public class MyGLSurfaceView extends GLSurfaceView {
         setEGLContextClientVersion(2);
 
         // Set the Renderer for drawing on the GLSurfaceView
+        setEGLConfigChooser(8, 8, 8, 8, 16, 0);
         mRenderer = new MyRenderer();
         setRenderer(mRenderer);
 
